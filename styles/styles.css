@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans","Arial",sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.page-wrap {
+    -webkit-transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94);
+    -moz-transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94);
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    background: #fff;
+    min-height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.home-header {
+  background-image: url('../images/background.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 400px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.home-header:before {
+    content: "";
+    display: block;
+    padding-bottom: 50%;
+}
+
+.home-header .home-header-wrap {
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.home-header .home-header-content {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.home-header .home-nav {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    transition: all 400ms ease;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.home-header .home-nav .navburger {
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    transition: all 250ms ease;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    text-decoration: none;
+}
+
+.home-header .home-nav .home-nav-items {
+    color: #fff;
+    float: right;
+    list-style-type: none;
+    margin-right: 50px;
+    padding: 0;
+}
+
+.home-header .home-nav .home-nav-items li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 25px;
+    text-shadow: 0 0 8px #fff;
+    text-transform: uppercase;
+}
+
+.home-header .home-nav .home-nav-items li a {
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    transition: all 250ms ease;
+    border-bottom: 1px solid rgba(255,255,255,0);
+    color: #fff;
+    letter-spacing: 0.2rem;
+    padding-bottom: 2px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home-header h1 {
+  font-size: 4.5rem;
+}
+
+.home-header p {
+  font-size: 1.5rem;
+}
+
+.home-header h1, .home-header p {
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    margin: 0;
+    width: 100%;
+    text-shadow: 0 0 8px #fff;
+}
+
+
+.home-section {
+  clear: both;
+  width: 100%;
+}
+
+
+.home-section .home-section-content {
+    max-width: 1140px;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-section .home-section-content .left {
+    float: left;
+}
+
+.home-section .home-section-content .right {
+    float: right;
+}
+
+.home-section .home-section-content .section-text-block {
+    width: 34%;
+    margin: 5% 5% 0 5%;
+}
+
+.home-section .home-section-content .section-text-block h2 {
+    color: #196576;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.home-section .home-section-content .section-text-block p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.headshot {
+border-radius: 50%;
+}
+
+.home-section.projects {
+    background-color: #2E7884;
+    background-image: -webkit-linear-gradient(#2E7884,#124459);
+    background-image: linear-gradient(#2E7884,#124459);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**MEDIA QUERIES**/
+@media only screen and (min-width: 541px) {
+    .mobile-menu-wrap {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .home-header .home-nav .navburger {
+        -webkit-transform:translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        font-size: 24px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .home-header .home-nav .logo {
+        -webkit-transition:all 250ms ease;
+        -moz-transition: all 250ms ease;
+        transition: all 250ms ease;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .home-header .home-nav .home-nav-items {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .home-header .home-header-content {
+        margin-top:20px;
+    }
+
+    .home-header .home-nav {
+        padding: 0 20px;
+    }
+
+    .home-header .home-nav .home-nav-items li {
+        font-size: 0.75rem;
+        margin: 0 10px;
+    }
+
+    .home-header .home-nav .home-nav-items li:last-child {
+        margin: 0;
+    }
+
+    .home-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-header h1 {
+        font-size:1.5rem;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .home-header .home-nav .home-nav-items li {
+        font-size: 0.7rem;
+        margin: 0 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .home-section .home-section-content .section-text-block {
+        display:block;
+        float: none;
+        margin: 0 auto 5% auto;
+        width: 80%;
+    }
+}

@@ -11,7 +11,6 @@
 
   <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
   <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -54,36 +53,37 @@
         <div class="project-wrapper">
           <div class="flo-chart">
             <div class="project-desc">
-            <h4 class="project-header">Flo Chart</h4>
-            <p>A mobile app designed to track hormonal patterns in a woman's menstrual cycle. Includes a dynamic calendar, mood tracker, mood graph, tips and tricks, and daily hormonal information gathered from scientific studies.</p>
-            <ul class="tech-used">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>AngularJS</li>
-              <li>Ionic</li>
-              <li>D3.js</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-            <img class="flo-chart-image" src="../images/flochart.png"/>
+              <h4 class="project-header">Flo Chart</h4>
+              <p>A mobile app designed to track hormonal patterns in a woman's menstrual cycle. Includes a dynamic calendar, mood tracker, mood graph, tips and tricks, and daily hormonal information gathered from scientific studies.</p>
+              <ul class="tech-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>AngularJS</li>
+                <li>Ionic</li>
+                <li>D3.js</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <img class="flo-chart-image" src="../images/flochart.png" />
           </div>
           <div class="plant">
-            <img class="plant-image" src="../images/planthome.png"/>
+            <img class="plant-image" src="../images/planthome.png" />
             <div class="project-desc-alt">
               <h4 class="project-header">Plants For Life</h4>
-              <p>Plantsfor.life is an online resource for those interested in the multiple uses of plants. The database is a superset of the data found on the PFAF website. The site was designed to assist in selecting and saving lists of plants based on use and function.</p>
-            <ul class="tech-used">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>AngularJS</li>
-              <li>Gulp</li>
-              <li>Passport</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-            </ul>
+              <p>Plantsfor.life is an online resource for those interested in the multiple uses of plants. The database is a superset of the data found on the PFAF website. The site was designed to assist in selecting and saving lists of plants based on
+                use and function.</p>
+              <ul class="tech-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>AngularJS</li>
+                <li>Gulp</li>
+                <li>Passport</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -92,15 +92,35 @@
 
     <div class="home-section contact">
       <div class="home-section-content">
-        <div class="section-text-block contact-info">
+        <div class="contact-info">
           <h2>Contact</h2>
-        </div>
-        <div class="map">
+              <div class="contact-info-wrapper">
+            <div id="form">
+              <div id="social-icons">
+                <a href="mailto:hathaway.jess@gmail.com" target="_blank" class="grow"><span class="icon-mail"></span></a>
+                <a href="https://www.facebook.com/jessica.hathaway.5" target="_blank" class="grow"><span class="icon-facebook2"></span></a>
+                <a href="https://www.instagram.com/makeshifts/" target="_blank" class="grow"><span class="icon-instagram"></span></a>
+                <a href="https://github.com/hathawayjess" target="_blank" class="grow"><span class="icon-github"></span></a>
+                <a href="https://www.linkedin.com/in/hathawayjess" target="_blank" class="grow"><span class="icon-linkedin"></span></a>
+              </div>
+              <form id="contactForm" action="https://formspree.io/hathaway.jess@gmail.com" method="POST">
+                <input type="text" name="name" class="name" placeholder="Name" required>
+                <input type="email" name="_replyto" class="email" placeholder="E-mail" required>
+                <input type="text" name="subject" class="subject" placeholder="Subject" required>
+                <textarea name="message" class="message" placeholder="Message..." required></textarea>
+
+
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <button type="submit" id="sendMessage" class="submit" value="Send">Send</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer clear">
       <div class="footer-inner">
         <ul class="footer-nav">
           <li><a href="/">Home</a></li>

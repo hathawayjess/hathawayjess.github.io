@@ -86,7 +86,7 @@ a:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 400px;
+  max-height: 500px;
   overflow: hidden;
   display: block;
   position: relative;
@@ -251,11 +251,10 @@ a:hover {
   max-width: 40%;
   border-radius: 3px;
   box-shadow: 0px 0px 3px  #fff;
+  margin-top: 40px;
 }
 
-.plant-image {
-margin-top: 40px;
-}
+
 
 
 .project-header {
@@ -303,6 +302,7 @@ box-shadow: 0 0 8px #bfbfbf;
 .tech-used {
   list-style-type: none;
   font-size: .8rem;
+  padding-left: 0;
 }
 
 .tech-used li {

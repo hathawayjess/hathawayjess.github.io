@@ -84,7 +84,7 @@ a:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 500px;
+  max-height: 550px;
   overflow: hidden;
   display: block;
   position: relative;
@@ -215,8 +215,14 @@ a:hover {
 .home-section {
   clear: both;
   width: 100%;
+  min-height: 450px;
 }
 
+.about {
+  background-image: url('../images/map.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .home-section .home-section-content {
     overflow: hidden;

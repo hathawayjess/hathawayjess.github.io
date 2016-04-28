@@ -15,16 +15,16 @@
 
 <body>
 
-  <div class="page-wrap">
+  <div id="home" class="page-wrap">
 
     <div class="home-header">
       <div class="home-header-wrap">
         <div class="home-nav">
           <ul class="home-nav-items">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/work">Work</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="home-header-content">
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="home-section about">
+    <div id="about" class="home-section about">
       <div class="home-section-content">
         <div class="section-text-block left">
           <h2>Hello!</h2>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="home-section projects">
+    <div id="work" class="home-section projects">
       <div class="project-section-content project-content">
         <h3>Projects</h3>
         <div class="project-wrapper">
@@ -64,11 +64,12 @@
                 <li>Node.js</li>
                 <li>MongoDB</li>
               </ul>
-            </div>
-            <img class="flo-chart-image" src="../images/flochart.png" />
+            </div><div class="image">
+            <a href="http://flochart.hathawayjess.com" target="_blank"><img class="flo-chart-image" src="../images/flochart.png" /></a></div>
           </div>
           <div class="plant">
-            <img class="plant-image" src="../images/planthome.png" />
+            <div class="image">
+            <a href="http://plantsfor.life" target="_blank"><img class="plant-image" src="../images/planthome.png" /></a></div>
             <div class="project-desc-alt">
               <h4 class="project-header">Plants For Life</h4>
               <p>Plantsfor.life is an online resource for those interested in the multiple uses of plants. The database is a superset of the data found on the PFAF website. The site was designed to assist in selecting and saving lists of plants based on
@@ -89,7 +90,7 @@
       </div>
     </div>
 
-    <div class="home-section contact">
+    <div id="contact" class="home-section contact">
       <div class="home-section-content">
         <div class="contact-info">
           <h2>Contact</h2>
@@ -122,10 +123,10 @@
     <div class="footer clear">
       <div class="footer-inner">
         <ul class="footer-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>

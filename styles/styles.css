@@ -248,7 +248,14 @@ a:hover {
   margin-top: 100px;
 }
 
-.flo-chart, .plant, .contact-info-wrapper {
+.flo-chart, .plant {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+.contact-info-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -268,8 +275,12 @@ a:hover {
   text-align: right;
 }
 
+.image {
+  width: 40%;
+}
+
 .flo-chart-image, .plant-image {
-  max-width: 40%;
+  max-width: 100%;
   border-radius: 3px;
   box-shadow: 0px 0px 3px  #fff;
   margin-top: 40px;
@@ -312,7 +323,7 @@ box-shadow: 0 0 8px #bfbfbf;
     background-image: -webkit-linear-gradient(#2E7884,#124459);
     background-image: linear-gradient(#2E7884,#124459);
     color: #fff;
-        padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .home-section .project-content {
@@ -322,7 +333,7 @@ box-shadow: 0 0 8px #bfbfbf;
 
 .tech-used {
   list-style-type: none;
-  font-size: .8rem;
+  font-size: 1rem;
   padding-left: 0;
 }
 

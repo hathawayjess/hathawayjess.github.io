@@ -279,11 +279,18 @@ a:hover {
   width: 40%;
 }
 
-.flo-chart-image, .plant-image {
+.flo-chart-image {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0px 0px 3px  #fff;
   margin-top: 40px;
+}
+
+.plant-image {
+  box-shadow: 0px 0px 3px #16364A;
+  margin-top: 40px;
+  max-width: 100%;
+  border-radius: 3px;
 }
 
 

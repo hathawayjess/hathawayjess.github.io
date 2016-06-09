@@ -318,6 +318,14 @@ border-radius: 50%;
 box-shadow: 0 0 8px #bfbfbf;
 }
 
+.mobile-headshot-block {
+  display: none;
+}
+
+.mobile-image {
+  display: none;
+}
+
 .projects {
     background-color: #2E7884;
     background-image: -webkit-linear-gradient(#2E7884,#124459);
@@ -384,6 +392,14 @@ form {
     color: #fff;
     margin-bottom: 20px;
     box-sizing: border-box; }
+
+    #sendMessage:hover {
+      background: #124459;
+      cursor: pointer;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      transition: .3s;
+    }
 
 		form input:focus, form textarea:focus {
 		 	border: 1px solid #124459;
@@ -505,7 +521,109 @@ form {
 
 
 /**MEDIA QUERIES**/
-@media only screen and (min-width: 541px) {
+
+
+@media screen and (max-width: 700px) {
+
+
+  .home-nav {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .home-section .home-section-content,
+  .home-section .home-section-content .section-text-block,
+  .home-section .home-section-content .headshot-block,
+  .home-section .home-section-content .headshot,
+  .mobile-headshot-block  {
+     display: block;
+     float: none;
+     margin: 0 auto;
+  }
+
+  .home-section .home-section-content .headshot-block,
+  .home-section .home-section-content h2 {
+    display: none;
+  }
+
+  .home-section .home-section-content .section-text-block {
+    width: 85%;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .home-section .home-section-content {
+    padding: 30px 0;
+  }
+
+  .project-wrapper, .plant {
+    margin-top: 0;
+  }
+
+  .home-header {
+    padding-bottom: 50px;
+  }
+
+  .flo-chart, .plant {
+    display: block;
+  }
+
+  .project-desc, .project-desc-alt {
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+  }
+
+  #full-flo {
+    display: none;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  #form {
+    width: 90%;
+  }
+
+  #social-icons {
+    flex-wrap: wrap;
+    font-size: 4.5rem;
+  }
+
+  #social-icons a {
+    padding: 1px;
+  }
+
+  .icon-facebook2 {
+    display: none;
+  }
+
+  #contact {
+    min-height: 340px;
+  }
+
+  .footer-nav {
+    padding-left: 0;
+  }
+
+  .contact-info {
+    padding-bottom: 15px;
+  }
+
+
+
+}
+
+
+/*@media only screen and (min-width: 541px) {
     .mobile-menu-wrap {
         display:none;
     }
@@ -574,13 +692,20 @@ form {
         font-size: 0.7rem;
         margin: 0 0 0 10px;
     }
-}
-
-@media only screen and (max-width: 890px) {
-    .home-section .home-section-content .section-text-block {
+    .home-section .home-section-content .section-text-block .headshot-block{
         display:block;
         float: none;
         margin: 0 auto 5% auto;
         width: 80%;
     }
 }
+
+@media only screen and (max-width: 890px) {
+    .home-section .home-section-content .section-text-block .headshot-block{
+        display:block;
+        float: none;
+        margin: 0 auto 5% auto;
+        width: 80%;
+    }
+}
+*/

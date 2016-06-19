@@ -1,6 +1,9 @@
 
 
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Regular.ttf');
+}
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot?q23mq');
@@ -54,6 +57,10 @@ a:hover {
 }
 .left {
   float: left;
+}
+
+#name-hide {
+  display: none;
 }
 
 .right {
@@ -202,6 +209,7 @@ a:hover {
 
 .home-header p {
   font-size: 1rem;
+  padding-top: 50px;
 }
 
 .home-header h1, .home-header p, .home-section h3 {
@@ -232,6 +240,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .home-section .home-section-content .left {
@@ -327,6 +336,10 @@ border-radius: 50%;
 box-shadow: 0 0 8px #bfbfbf;
 }
 
+.headshot-block {
+  padding-top: 15px;
+}
+
 .mobile-headshot-block {
   display: none;
 }
@@ -378,11 +391,12 @@ box-shadow: 0 0 8px #bfbfbf;
   text-align: center;
 }
 
-.contact-info h2 {
+.home-section-content .contact-info h3 {
   color: #196576;
   font-size: 3rem;
   font-weight: normal;
   margin-top: 0;
+  padding-bottom: 40px;
 }
 
 
@@ -531,12 +545,23 @@ form {
 
 /**MEDIA QUERIES**/
 
+@media screen and (max-width: 1000px) {
+
+  #content-load p {
+    padding-top: 100px;
+  }
+
+}
 
 @media screen and (max-width: 700px) {
 
 
   .home-nav {
     display: none;
+  }
+
+  #content-load p {
+    padding-top: 50px;
   }
 
 }
@@ -552,6 +577,18 @@ form {
      margin: 0 auto;
   }
 
+  .ip-header {
+    display: none;
+  }
+
+  #name-hide {
+    display: block;
+    font-weight: 200;
+  }
+
+  .home-header-content p {
+    padding-top: 10px;
+  }
   .home-section .home-section-content .headshot-block,
   .home-section .home-section-content h2 {
     display: none;
@@ -572,8 +609,10 @@ form {
   }
 
   .home-header {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
+
+
 
   .flo-chart, .plant {
     display: block;
@@ -621,14 +660,50 @@ form {
 
   .footer-nav {
     padding-left: 0;
+    margin: 0 auto;
   }
 
   .contact-info {
     padding-bottom: 15px;
   }
 
+    #content-load p {
+    padding-top: 50px;
+  }
 
 
+}
+
+@media screen and (max-width: 479px) {
+  #name-hide {
+    font-size: 2.6em;
+  }
+    #social-icons {
+    font-size: 3em;
+    display: inline-block;
+  }
+    #content-load p {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #name-hide {
+    font-size: 2.4em;
+  }
+
+  #content-load p {
+    font-size: .8em;
+  }
+
+  #social-icons {
+    font-size: 2.5em;
+  }
+
+    #content-load p {
+    padding-top: 20px;
+  }
 }
 
 

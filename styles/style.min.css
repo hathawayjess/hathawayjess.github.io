@@ -198,23 +198,31 @@ table {
 }
 
 .icon-mail:before {
-    content: "\e900"
+    content: "\e900";
 }
 
 .icon-facebook2:before {
-    content: "\e901"
+    content: "\e901";
 }
 
 .icon-instagram:before {
-    content: "\e902"
+    content: "\e902";
 }
 
 .icon-github:before {
-    content: "\e903"
+    content: "\eab0";
 }
 
 .icon-linkedin:before {
-    content: "\e904"
+    content: "\eac9";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-codepen:before {
+    content: "\eae8";
 }
 
 * {

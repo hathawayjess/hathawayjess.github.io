@@ -421,7 +421,7 @@ a:hover {
     align-items: center
 }
 
-.contact-info-wrapper, .flo-chart, .plant, .oaf {
+.contact-info-wrapper, .flo-chart, .plant, .oaf, .tc, .oese, .ed {
     display: flex;
     justify-content: space-around
 }
@@ -442,7 +442,7 @@ a:hover {
     margin-top: 100px
 }
 
-.flo-chart, .plant, .oaf {
+.flo-chart, .plant, .oaf, .tc, .oese, .ed {
     align-items: flex-start
 }
 
@@ -450,7 +450,7 @@ a:hover {
     align-items: center
 }
 
-.plant, .flo-chart {
+.plant, .flo-chart, .oaf, .oese, .tc {
     margin-top: 175px
 }
 
@@ -464,7 +464,7 @@ a:hover {
     text-align: right
 }
 
-.flo-chart-image, .plant-image, .oaf-img {
+.flo-chart-image, .plant-image, .oaf-img, .tc-img, .oese-img, .ed-img {
     margin-top: 40px;
     max-width: 100%;
     border-radius: 3px
@@ -480,6 +480,10 @@ a:hover {
 
 .plant-image {
     box-shadow: 0 0 3px #16364A
+}
+
+.tc-img, .oese-img {
+    box-shadow: 0 0 3px #344c4c
 }
 
 .project-header {
@@ -743,7 +747,7 @@ form textarea {
         display: none
     }
 
-    .flo-chart, .mobile-image, .plant, .oaf {
+    .flo-chart, .mobile-image, .plant, .oaf, .tc, .ed, .oese {
         display: block
     }
 
@@ -761,8 +765,12 @@ form textarea {
         padding: 30px 0
     }
 
-    .plant, .project-wrapper {
+    .project-wrapper {
         margin-top: 0
+    }
+
+    .ed, .oese, .plant, .tc, .flo-chart {
+        margin-top: 60px;
     }
 
     .home-header {
@@ -775,7 +783,7 @@ form textarea {
         text-align: left
     }
 
-    #full-flo, .icon-facebook2 {
+    #full-flo, .icon-facebook2, #full-oese, #full-ed {
         display: none
     }
 
